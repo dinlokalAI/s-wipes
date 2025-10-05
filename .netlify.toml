@@ -1,0 +1,8 @@
+[build]
+  command = "npm --prefix svelte-app install && npm run build --prefix svelte-app"
+  publish = "svelte-app/dist"
+
+[functions]
+  directory = "netlify/functions"
+  python_version = "3.10"
+  node_bundler = "esbuild"
